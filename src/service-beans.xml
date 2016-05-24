@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xmlns:cxf="http://cxf.apache.org/core"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+	http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+	http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	
+	<bean id="httpClient" class="com.hctn.dev.toolkit.http.impl.HttpServiceImpl"></bean>
+	
+	<bean id="adduserService" class="com.ysbn.videotrain.managesystem.service.impl.AddUserServiceImpl">
+		<property name="adusdao" ref="adusdao"></property>
+	</bean>
+	<bean id="configService" class="com.ysbn.videotrain.managesystem.service.impl.ConfigUserMsgServiceImpl">
+		<property name="configUserDao" ref="configUserDao"></property>
+	</bean>
+	<!-- operateVideoInfoService -->
+	<bean id="operateVideoInfoService" class="com.ysbn.videotrain.managesystem.service.impl.OperateVideoInfoServiceImpl">
+		<property name="operateVideoInfoDao" ref="operateVideoInfoDao"></property>
+	</bean>
+	<!-- operateUserExamInfoService -->
+	<bean id="operateUserExamInfoService" class="com.ysbn.videotrain.managesystem.service.impl.OperateUserExamInfoServiceImpl">
+		<property name="operateUserExamInfoDao" ref="operateUserExamInfoDao"></property>
+	</bean>
+	<!-- create Flow -->
+	<bean id="ctfService" class="com.ysbn.videotrain.managesystem.service.impl.CreateTrainFlowServiceImpl">
+		<property name="ctfDao" ref="ctfDao"></property>
+	</bean>
+	<bean id="configFlowService" class="com.ysbn.videotrain.managesystem.service.impl.ConfigFlowServiceImpl">
+		<property name="configTrainDao" ref="configTrainDao"></property>
+	</bean>
+	<!-- loginService -->
+	<bean id="loginService" class="com.ysbn.videotrain.managesystem.service.impl.LoginServiceImpl">
+		<property name="loginDao" ref="loginDao"></property>
+	</bean>
+</beans>

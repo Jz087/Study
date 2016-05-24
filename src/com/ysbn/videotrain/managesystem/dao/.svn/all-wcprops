@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/HCTN_YANFA/!svn/ver/7655/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/dao
+END
+IOperateUserExamInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/HCTN_YANFA/!svn/ver/7225/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/dao/IOperateUserExamInfoDao.java
+END
+IAddUserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/HCTN_YANFA/!svn/ver/7150/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/dao/IAddUserDao.java
+END
+OperateVideoInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/HCTN_YANFA/!svn/ver/7040/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/dao/OperateVideoInfoDao.java
+END
+IConfigTrainFlowDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/HCTN_YANFA/!svn/ver/7459/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/dao/IConfigTrainFlowDao.java
+END
+IConfigUserMsgDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/HCTN_YANFA/!svn/ver/7254/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/dao/IConfigUserMsgDao.java
+END
+ILoginDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/HCTN_YANFA/!svn/ver/7225/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/dao/ILoginDao.java
+END
+ICreateTrainFlowDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/HCTN_YANFA/!svn/ver/7254/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/dao/ICreateTrainFlowDao.java
+END

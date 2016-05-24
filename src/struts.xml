@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+<constant name="struts.objectFactory" value="spring"></constant>
+<package name="videotrain" extends="struts-default">
+	<action name="login" class="loginAction">
+		<result name="success" >main.jsp</result>
+	 	<result name="fail" >login.jsp</result>
+	</action>
+	<action name="addUserMessage" class="addUserMessageAction">
+		<interceptor-ref name="fileUpload">
+ 			<param name="allowedTypes">
+ 				application/octet-stream,application/zip,application/x-zip-compressed,application/x-rar-compressed,application/msword,application/vnd.ms-excel,application/pdf,application/vnd.ms-powerpoint,text/plain,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.presentationml.presentation,
+ 			</param>
+ 			<param name="allowedExtensions">
+ 				doc,docx,pdf,xls,xlsx,ppt,pptx,rar,zip
+ 			</param>
+ 			<param name="maximumSize">52428801</param>
+ 		</interceptor-ref>
+ 		<interceptor-ref name="defaultStack"></interceptor-ref>
+	 	<result name="success" >userinfo_import.jsp</result>
+	 	<result name="error" >userinfo_import.jsp</result>
+	</action>
+	<action name="preVideoinfo" class="queryVideoInfoAction">
+		<result name="success" >videoinfo.jsp</result>
+	 	<result name="error" >videoinfo.jsp</result>
+	</action>
+	<action name="operateVideoInfo" class="operateVideoInfoAction">
+	 	<result name="success" >videoinfo.jsp</result>
+	 	<result name="insert" type="redirect">preVideoinfo.action</result>
+	 	<result name="delete" type="redirect">preVideoinfo.action</result>
+	 	<result name="update" >updateVideoinfo.jsp</result>
+	 	<result name="updateVideoInfo" type="redirect">preVideoinfo.action</result>
+	</action>
+	<action name="operateUserExamInfo" class="operateUserExamInfoAction">
+	 	<result name="deta">detailVideoRecord.jsp</result>
+	 	<result name="userDepartDetail">showUserDepart.jsp</result>
+	 	<result name="culDetail">showUserCul.jsp</result>
+	 	<result name="examRecordDetail">showExamRe.jsp</result>
+	 	<result name="videoDetail">showViRec.jsp</result>
+	</action>
+	
+	<action name="exportExcel" class="exportExcelAction">
+		<result name="success">/main.jsp</result>
+ 		<result name="false">/login.jsp</result>
+	</action>
+	
+	<action name="createTrainFlow" class="createTrainFlowAction">
+		<interceptor-ref name="fileUpload">
+ 			<param name="allowedTypes">
+ 				application/octet-stream,application/zip,application/x-zip-compressed,application/x-rar-compressed,application/msword,application/vnd.ms-excel,application/pdf,application/vnd.ms-powerpoint,text/plain,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.presentationml.presentation,
+ 			</param>
+ 			<param name="allowedExtensions">
+ 				doc,docx,pdf,xls,xlsx,ppt,pptx,rar,zip
+ 			</param>
+ 			<param name="maximumSize">52428801</param>
+ 		</interceptor-ref>
+ 		<interceptor-ref name="defaultStack"></interceptor-ref>
+	 	<result name="success">train_manage.jsp</result>
+	 	<result name="error">train_manage.jsp</result>
+	</action>
+	
+	<!-- <action name="fileUploadAction" class="fileUploadAction">
+ 			<interceptor-ref name="fileUpload">
+ 				<param name="allowedTypes">
+ 					application/octet-stream,application/zip,application/x-zip-compressed,application/x-rar-compressed,application/msword,application/vnd.ms-excel,application/pdf,application/vnd.ms-powerpoint,text/plain,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.presentationml.presentation,
+ 				</param>
+ 				<param name="allowedExtensions">
+ 					doc,docx,pdf,xls,xlsx,ppt,pptx,rar,zip
+ 				</param>
+ 				<param name="maximumSize">52428801</param>
+ 			</interceptor-ref>
+ 			<interceptor-ref name="defaultStack"></interceptor-ref>
+ 			<result name="success"></result>
+ 			<result name="input"></result>
+ 	</action> -->
+	
+</package>
+
+<package name="videotrain-json" extends="json-default">
+
+	<action name="allocationUserMsg" class="allocationUserMsgAction">
+		<interceptor-ref name="json"></interceptor-ref>
+	 	<result name="success" type="json" ></result>
+	 	<result name="error" type="json" ></result>
+	</action>
+	
+	<action name="getOrganizeMsg" class="getOrganizeMsgAction">
+		<interceptor-ref name="json"></interceptor-ref>
+	 	<result name="success" type="json" ></result>
+	 	<result name="error" type="json" ></result>
+	</action>
+	<!-- 视频信息查询 -->
+	<action name="queryVideoInfo" class="queryVideoInfoAction">
+		<interceptor-ref name="json"></interceptor-ref>
+	 	<result name="success" type="json" ></result>
+	 	<result name="error" type="json" ></result>
+	</action>
+	<!-- queryExam -->
+	<action name="queryExamInfo" class="queryExamInfoAction">
+		<interceptor-ref name="json"></interceptor-ref>
+	 	<result name="success" type="json" ></result>
+	 	<result name="error" type="json" ></result>
+	</action>
+	<!-- queryUserRecord -->
+	<action name="queryUserRecord" class="queryUserRecordAction">
+		<interceptor-ref name="json"></interceptor-ref>
+	 	<result name="success" type="json" ></result>
+	 	<result name="error" type="json" ></result>
+	</action>
+
+	<action name="getVideoUsed" class="getVideoUsedAction">
+		<interceptor-ref name="json"></interceptor-ref>
+	 	<result name="success" type="json" ></result>
+	 	<result name="error" type="json" ></result>
+	</action>
+	
+	<action name="queryDepart" class="queryDepartAction">
+		<interceptor-ref name="json"></interceptor-ref>
+	 	<result name="success" type="json" ></result>
+	 	<result name="error" type="json" ></result>
+	</action>
+	
+	<action name="configTrainFlowMsg" class="configTrainFlowMsgAction">
+		<interceptor-ref name="json"></interceptor-ref>
+	 	<result name="success" type="json" ></result>
+	 	<result name="error" type="json" ></result>
+	</action>
+	
+</package>
+
+</struts>    

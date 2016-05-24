@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/HCTN_YANFA/!svn/ver/7462/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/service
+END
+OperateVideoInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/HCTN_YANFA/!svn/ver/7038/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/service/OperateVideoInfoService.java
+END
+IConfigFlowService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/HCTN_YANFA/!svn/ver/7461/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/service/IConfigFlowService.java
+END
+IConfigUserMsgService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/HCTN_YANFA/!svn/ver/7256/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/service/IConfigUserMsgService.java
+END
+ILoginService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/HCTN_YANFA/!svn/ver/7227/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/service/ILoginService.java
+END
+ICreateTrainFlowService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/HCTN_YANFA/!svn/ver/7256/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/service/ICreateTrainFlowService.java
+END
+IOperateUserExamInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/HCTN_YANFA/!svn/ver/7227/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/service/IOperateUserExamInfoService.java
+END
+IAddUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/HCTN_YANFA/!svn/ver/7152/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/com/ysbn/videotrain/managesystem/service/IAddUserService.java
+END

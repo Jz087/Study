@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/HCTN_YANFA/!svn/ver/7768/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src
+END
+persist-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/HCTN_YANFA/!svn/ver/7457/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/persist-beans.xml
+END
+service-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/HCTN_YANFA/!svn/ver/7457/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/service-beans.xml
+END
+sys.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/HCTN_YANFA/!svn/ver/7009/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/sys.properties
+END
+action-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/HCTN_YANFA/!svn/ver/7668/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/action-beans.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/HCTN_YANFA/!svn/ver/7223/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/jdbc.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/HCTN_YANFA/!svn/ver/7009/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/log4j.properties
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/HCTN_YANFA/!svn/ver/7668/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/struts.xml
+END
+beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/HCTN_YANFA/!svn/ver/7042/46.YSBN_VTM/1.ProjectCode/YSBN_VTM/src/beans.xml
+END

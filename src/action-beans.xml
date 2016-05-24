@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	
+	<bean id="baseAction" class="com.ysbn.videotrain.managesystem.action.BaseAction"></bean>
+	<!--  -->
+	<bean id="allocationUserMsgAction" class="com.ysbn.videotrain.managesystem.action.AllocationUserMsgAction" scope="request" >
+		<property name="configService" ref="configService"></property>
+	</bean>
+	<bean id="addUserMessageAction" class="com.ysbn.videotrain.managesystem.action.AddUserMesssageAction" scope="request">
+		<property name="adduserService" ref="adduserService"></property>
+	</bean>
+	
+	<!-- queryVideoInfoAction -->
+	<bean id="queryVideoInfoAction" class="com.ysbn.videotrain.managesystem.action.QueryVideoInfoAction" scope="request">
+		<property name="operateVideoInfoService" ref="operateVideoInfoService"></property>
+	</bean>
+	
+	<bean id="getVideoUsedAction" class="com.ysbn.videotrain.managesystem.action.GetVideoUsedAction" scope="request">
+		<property name="operateVideoInfoService" ref="operateVideoInfoService"></property>
+	</bean>
+	<!-- operateVideoInfoAction -->
+	<bean id="operateVideoInfoAction" class="com.ysbn.videotrain.managesystem.action.OperateVideoInfoAction" scope="request">
+		<property name="operateVideoInfoService" ref="operateVideoInfoService"></property>
+	</bean>
+
+	<!-- createTrainFlow -->
+	<bean id="createTrainFlowAction" class="com.ysbn.videotrain.managesystem.action.CreateTrainFlowAction" scope="request">
+		<property name="ctfService" ref="ctfService"></property>
+	</bean>
+	<bean id="configTrainFlowMsgAction" class="com.ysbn.videotrain.managesystem.action.ConfigTrainFlowMsgAction" scope="request">
+		<property name="configFlowService" ref="configFlowService"></property>
+	</bean>
+
+	<!-- queryExamInfoAction -->
+	<bean id="queryExamInfoAction" class="com.ysbn.videotrain.managesystem.action.QueryExamInfoAction" scope="request">
+		<property name="operateUserExamInfoService" ref="operateUserExamInfoService"></property>
+	</bean>
+	<!-- operateUserExamInfoAction -->
+	<bean id="operateUserExamInfoAction" class="com.ysbn.videotrain.managesystem.action.OperateUserExamInfoAction" scope="request">
+		<property name="operateUserExamInfoService" ref="operateUserExamInfoService"></property>
+		<property name="operateVideoInfoService" ref="operateVideoInfoService"></property>
+	</bean>
+	<!-- queryUserRecordAction -->
+	<bean id="queryUserRecordAction" class="com.ysbn.videotrain.managesystem.action.QueryUserRecordAction" scope="request">
+		<property name="operateUserExamInfoService" ref="operateUserExamInfoService"></property>
+	</bean>
+	<!-- loginAction -->
+	<bean id="loginAction" class="com.ysbn.videotrain.managesystem.action.LoginAction" scope="request">
+		<property name="loginService" ref="loginService"></property>
+	</bean>
+	
+	<!-- queryDepartAction -->
+	<bean id="queryDepartAction" class="com.ysbn.videotrain.managesystem.action.QueryDepartAction" scope="request">
+		<property name="operateUserExamInfoService" ref="operateUserExamInfoService"></property>
+	</bean>
+	
+	<!-- exportExcelAction -->
+	<bean id="exportExcelAction" class="com.ysbn.videotrain.managesystem.action.GetExcelAction" scope="request">
+		<property name="operateUserExamInfoService" ref="operateUserExamInfoService"></property>
+	</bean>
+	
+	<!-- 
+	<bean id="fileUploadAction" class="com.ysbn.videotrain.managesystem.action.FileUploadAction" scope="request"></bean> -->
+</beans>
